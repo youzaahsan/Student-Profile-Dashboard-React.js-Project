@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Fira Code", monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  letter-spacing: -0.01em;
+  transition: background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Stunning Smooth Custom Transitions */
+.transition-all-premium {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Beautiful Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.2);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.4);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Ambient glow overlays */
+.ambient-glow-card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.dark .ambient-glow-card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Gorgeous Hover Animation on Cards */
+.student-card-hover {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.student-card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.07), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.dark .student-card-hover:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Glow Badge Custom */
+.pulse-badge-success {
+  animation: pulse-light-success 2s infinite;
+}
+@keyframes pulse-light-success {
+  0% {
+    box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(25, 135, 84, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(25, 135, 84, 0);
+  }
+}
+
+.pulse-badge-secondary {
+  animation: pulse-light-secondary 2s infinite;
+}
+@keyframes pulse-light-secondary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(108, 117, 125, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(108, 117, 125, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(108, 117, 125, 0);
+  }
+}
+
+/* Interactive elements styles */
+.custom-input-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15) !important;
+}
+.dark .custom-input-focus:focus {
+  box-shadow: 0 0 0 3px rgba(13, 202, 240, 0.25) !important;
+}
+
+/* Animated backgrounds */
+.gradient-bar-animate {
+  background-size: 200% 200%;
+  animation: gradientMotion 5s ease infinite;
+}
+@keyframes gradientMotion {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+

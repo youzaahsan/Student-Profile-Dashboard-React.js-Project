@@ -1,0 +1,6 @@
+{
+  "name": "Student Profile Dashboard",
+  "description": "A React-based Student Profile Dashboard built using functional components, state management, and Bootstrap 5 styling with dynamic dark mode switching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
